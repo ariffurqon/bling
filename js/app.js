@@ -1,5 +1,22 @@
-var myApp = angular.module('angieauth', []);
+var myApp = angular.module('angieauth', ['ngRoute']);
 
-myApp.controller('MainCtrl', ['$scope', function($scope) {
-	$scope.test = "Hello lovers...";
-}])
+myApp.config(['$routeProvider', function($routeProvider){
+	$routeProvider
+		.when('/login', {
+			templateUrl: 'views/login.html',
+			controller: 'signupCtrl'
+		})
+
+		.when('/signup', {
+			templateUrl: 'views/signup.html',
+			controller: 'signupCtrl'
+		})
+		.when('/success', {
+			templateUrl: 'views/success.html',
+			controller: 'successCtrl'
+		})
+		.otherwise({
+			redirectTo: '/login'
+		});
+}]);
+

@@ -30,6 +30,10 @@
 	<nav class="cf" ng-include="'views/nav.html'"></nav>
 </header>
 	<div class="page">
+		<div class="userinfo" ng-show="currentUser">
+			<span class="userinfo">Hello {{currentUser.firstname}}</span>
+		</div>
+
 		<main class="cf" ng-view=""></main>
 	</div>
 </body>

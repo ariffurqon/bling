@@ -12,7 +12,7 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 		}
 	});
 
-	return {
+	var myObject = {
 		login: function(user) {
 			auth.$authWithPassword({
 				email: user.email,
@@ -47,11 +47,14 @@ myApp.factory('Authentication', ['$rootScope', '$firebaseAuth', '$firebaseObject
 						email: user.email
 					}); // user info
 
-
-					$rootScope.message = "Welcome " + user.firstname + ", Thank you for signing up!";
+					myObject.login(user);
+					
 				}).catch(function(error) {
 					$rootScope.message = error.message;
 				}); //createUser
 		} 	//sign up
 	};
+
+	return myObject;
 }]); // factory
+

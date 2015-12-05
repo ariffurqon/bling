@@ -1,4 +1,5 @@
-var myApp = angular.module('angieauth', ['ngRoute']);
+var myApp = angular.module('angieauth', ['ngRoute', 'firebase'])
+	.constant('FIREBASE_URL', 'https://angiebling.firebaseio.com/')
 
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider

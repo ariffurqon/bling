@@ -19,8 +19,11 @@
 	<script type="text/javascript" src="js/controllers/successCtrl.js"></script>
 </head>
 <body>
-	<div>
-		<main ng-view=""></main>
+<header>
+	<nav class="cf" ng-include="'views/nav.html'"></nav>
+</header>
+	<div class="page">
+		<main class="cf" ng-view=""></main>
 	</div>
 </body>
 </html>

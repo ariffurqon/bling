@@ -1,19 +1,20 @@
-<section class="page login">
+<section class="card login">
 	<form name="myform" ng-submit="login()" novalidate>
 		<div class="textintro">
 			<h2>Hello there!</h2>
-			<P>Please log-in to access and have a taste of heaven</P>
+			<P>Please log-in to access to the site</P>
 			<p class="message" ng-show="message">{{message}}</p>
 		</div>
 
 		<fieldset>
 			<input type="email" name="email" placeholder="your Email, please" ng-model="user.email" ng-required="true">
-			<p class="validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
+			<p class="error validationerror" ng-show="myform.email.$invalid && myform.email.$touched">Must be a valid email</p>
+
 			<input type="password" name="password" placeholder="Password" ng-model="user.password" ng-required="true">
-			<p class="validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password required</p>
+			<p class="error validationerror" ng-show="myform.password.$invalid && myform.password.$touched">Password required</p>
 		</fieldset>
 
 		<button type="submit" class="btn" ng-disabled="myform.$invalid">Login</button>
-		<P>Or <a href="#/signup">SignUp</a></P>
+		<P>Or <a ng-href="#/signup">SignUp</a></P>
 	</form>
 </section>

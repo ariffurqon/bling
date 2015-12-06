@@ -22,6 +22,11 @@ myApp.config(['$routeProvider', function($routeProvider){
 			controller: 'signupCtrl'
 		})
 
+		.when('/checkins/:uId/:mId/checkinsList', {
+			templateUrl: 'views/checkinsList.html',
+			controller: 'checkinsCtrl'
+		})
+
 		.when('/checkins/:uId/:mId', {
 			templateUrl: 'views/checkins.html',
 			controller: 'checkinsCtrl'

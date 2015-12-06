@@ -1,5 +1,5 @@
-var myApp = angular.module('angieauth', ['ngRoute', 'firebase'])
-	.constant('FIREBASE_URL', 'https://angiebling.firebaseio.com/')
+var myApp = angular.module('bling', ['ngRoute', 'firebase'])
+	.constant('FIREBASE_URL', 'https://blingy.firebaseIO.com/')
 
 myApp.run(['$rootScope', '$location', function($rootScope, $location){
 	$rootScope.$on('$routeChangeError', function(event, next, previous, error) {
@@ -21,9 +21,9 @@ myApp.config(['$routeProvider', function($routeProvider){
 			templateUrl: 'views/signup.html',
 			controller: 'signupCtrl'
 		})
-		.when('/success', {
-			templateUrl: 'views/success.html',
-			controller: 'successCtrl',
+		.when('/meetings', {
+			templateUrl: 'views/meetings.html',
+			controller: 'meetingsCtrl',
 			resolve: {
 				currentAuth: function(Authentication) {
 					return Authentication.requireAuth();

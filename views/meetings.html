@@ -2,11 +2,13 @@
   <div class="textintro">
     <h1>Add a Meeting</h1>
     <p>Type a meeting name and hit +</p>
-  </div>
+  </div> <!-- textintro -->
+
   <form class="formgroup addmeeting cf"
   	name="myform"
   	ng-submit="addMeeting()"
   	novalidate>
+
   	<div class="inputwrapper">
   		<input type="text" name="meetingname" 
   		placeholder="Meeting name.."
@@ -23,7 +25,8 @@
   			ng-click="deleteMeeting(key)">
   			<span>Delete this meeting</span>
   		</button>
+  		
   		<span class="text">{{meeting.name}}</span>
   </div>
 
-</div>
+</div><!-- meetings cf -->

@@ -1,5 +1,5 @@
 var myApp = angular.module('bling', ['ngRoute', 'firebase'])
-	.constant('FIREBASE_URL', 'https://blingy.firebaseIO.com/')
+	.constant('FIREBASE_URL', 'https://blingy.firebaseIO.com/');
 
 myApp.run(['$rootScope', '$location', function($rootScope, $location){
 	$rootScope.$on('$routeChangeError', function(event, next, previous, error) {
@@ -33,6 +33,5 @@ myApp.config(['$routeProvider', function($routeProvider){
 		.otherwise({
 			redirectTo: '/login'
 		});
-
 }]);
 

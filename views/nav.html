@@ -1,5 +1,9 @@
-<div class="logo"><a ng-href="#/">Bling</a></div>
+<!-- navbar // nav.html-->
+<div class="branding"><a ng-href="#/">Bling</a></div>
 	<ul>
+		<li>
+		<a ng-show="currentUser" ng-href="#/meetings">Meetings<span ng-show="howManyMeetings" class="badge">{{howManyMeetings}}</span></a>
+		</li>
 		<li><a ng-hide="currentUser" ng-href="#/login">Login</a></li>
-		<li><a ng-hide="currentUser" ng-href="#/signup">SignUp</a></li>
+		<li><a ng-hide="currentUser" ng-href="#/signup">Sign Up</a></li>
 	</ul>

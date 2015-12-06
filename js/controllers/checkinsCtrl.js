@@ -32,6 +32,19 @@ myApp.controller('checkinsCtrl',
  			$location.path('/checkins' + $scope.whichuser + '/' + $scope.whichmeeting + '/checkinsList');
  		});
 
- 		}; // addCheckin
+ 	}; // addCheckin
+
+ 	$scope.deleteCheckin = function(id) {
+ 		var refDel = new Firebase(FIREBASE_URL + 'users/' +
+ 			$scope.whichuser + '/meetings/' +
+ 			$scope.whichmeeting + '/checkins/' + id);
+
+ 		var record = $firebaseObject(refDel);
+ 		record.$remove(id);
+ 	};
 
  }]); // controller
+
+
+
+

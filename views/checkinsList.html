@@ -25,7 +25,17 @@
 		    <label for="dirdescending">desc</label>
 		  </div><!-- formgroup -->
 
-	</div>
+		  <div ng-show="currentUser" class="buttons cf">
+
+		      <button ng-hide="recordId" class="btn btn-pick"
+		        ng-click="pickRandom()">Pick Random</button>
+
+		      <button ng-show="recordId" class="btn btn-pick"
+		        ng-click="recordId=''">Reset</button>  
+		      
+		   </div>
+
+	</div> <!-- search -->
 
 	<ul class="userlist cf">
 		<li ng-repeat="checkin in checkins | orderBy: order:direction | filter: query">

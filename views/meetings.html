@@ -1,7 +1,7 @@
 <div class="card meeting cf">
   <div class="textintro">
-    <h1>Add a Meeting</h1>
-    <p>Type a meeting name and hit +</p>
+    <h1>add a meeting</h1>
+    <small>simply type a meeting name and hit +</small>
   </div> <!-- textintro -->
 
   <form class="formgroup addmeeting cf"
@@ -19,7 +19,7 @@
   	ng-disabled="myform.$invalid">+</button>
   </form>
 
-  <h2>Your meetings:</h2>
+  <h2>your meetings:</h2>
   <div class="meeting" ng-repeat="(key, meeting) in meetings">
   		<button class="btn btn-delete tooltip" 
   			ng-click="deleteMeeting(key)">

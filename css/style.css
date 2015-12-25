@@ -126,17 +126,17 @@ header {
 
 h1{
   font-size: 1.9rem;
-  font-weight: 400;
+  font-weight: 375;
   line-height: 100%;
   margin-bottom: 10px;
   padding-top: 10px;
-  font-weight: 700;
-    font-family: Lato,appleLogo,sans-serif;
-    margin: 0 0 1rem;
+  font-weight: 375;
+  font-family: Lato,appleLogo,sans-serif;
+  margin: 0 0 1rem;
 }
 
 h2{
-  font-weight: 400;
+  font-weight: 375;
   font-size: 1.5rem;
   line-height: 90%;
   margin-bottom: 5px;
@@ -235,7 +235,7 @@ input[type=radio] {
   outline: none;
 }
 
-.btn-list { background-color: #ccccff; background-image: url(../images/icons/icon_list.png); }
+.btn-list { background-color: #ffffcc; background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #ccffcc; background-image: url(../images/icons/icon_checkmark.png); }
 .btn-delete { background-color: #ffc4f0; background-image: url(../images/icons/icon_trash.png); }
 .btn-love { background-color: #ccffcc; background-image: url(../images/icons/icon_heart.png); }
@@ -389,7 +389,7 @@ fieldset {
 
 
 .userlist li.expanded .btn-love {
-  background-color: #C61C6F;
+  background-color: #ff51d1;
 }
 
 .userlist .buttons {
@@ -513,7 +513,7 @@ nav li a:hover {
 }
 
 .userinfo a {
-  color: #ff00ff;
+  color: #8324ff;
 }
 
 .userinfo input {
@@ -623,7 +623,7 @@ nav li a:hover {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  background-color: #ff00ff;
+  background-color: #fbbeff;
   border-radius: 10px;
 }
 .badge:empty {

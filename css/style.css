@@ -238,7 +238,7 @@ input[type=radio] {
 .btn-list { background-color: #ffffcc; background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-color: #ccffcc; background-image: url(../images/icons/icon_checkmark.png); }
 .btn-delete { background-color: #ffc4f0; background-image: url(../images/icons/icon_trash.png); }
-.btn-love { background-color: #ccffcc; background-image: url(../images/icons/icon_heart.png); }
+.btn-love { background-color: #ffffcc; background-image: url(../images/icons/icon_heart.png); }
 .btn-email { background-image: url(../images/icons/icon_email.png); }
 .btn-meeting { background-image:  url(../images/icons/icon_meeting.png); }
 

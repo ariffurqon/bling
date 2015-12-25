@@ -5,26 +5,26 @@
   </div> <!-- textintro -->
 
   <form class="formgroup addmeeting cf"
-  	name="myform"
-  	ng-submit="addMeeting()"
-  	novalidate>
+    name="myform"
+    ng-submit="addMeeting()"
+    novalidate>
 
-  	<div class="inputwrapper">
-  		<input type="text" name="meetingname" 
-  		placeholder="Meeting name.."
-  		ng-model="meetingname" ng-required="true"> 
-  	</div>
+    <div class="inputwrapper">
+      <input type="text" name="meetingname" 
+      placeholder="Meeting name.."
+      ng-model="meetingname" ng-required="true"> 
+    </div>
 
-  	<button type="submit" class="btn"
-  	ng-disabled="myform.$invalid">+</button>
+    <button type="submit" class="btn"
+    ng-disabled="myform.$invalid">+</button>
   </form>
 
   <h2>your meetings:</h2>
   <div class="meeting" ng-repeat="(key, meeting) in meetings">
-  		<button class="btn btn-delete tooltip" 
-  			ng-click="deleteMeeting(key)">
-  			<span>Delete this meeting</span>
-  		</button>
+      <button class="btn btn-delete tooltip" 
+        ng-click="deleteMeeting(key)">
+        <span>Delete this meeting</span>
+      </button>
 
       <a class="btn btn-checkin tooltip" ng-href="#/checkins/{{currentUser.regUser}}/{{meeting.$id}}">
         <span>Go to check-in URL</span>
@@ -33,8 +33,8 @@
       <a class="btn btn-list tooltip" ng-href="#/checkins/{{currentUser.regUser}}/{{meeting.$id}}/checkinsList">
         <span>View of the checked-in users</span>
       </a>
-  		
-  		<span class="text">{{meeting.name}}</span>
+      
+      <span class="text">{{meeting.name}}</span>
   </div>
 
 </div><!-- meetings cf -->
